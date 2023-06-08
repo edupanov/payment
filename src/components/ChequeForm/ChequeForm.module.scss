@@ -1,0 +1,148 @@
+.wrapper {
+  position: relative;
+
+  .outerOval {
+    position: relative;
+    z-index: 3;
+    width: 800px;
+    height: 16px;
+    margin: 0 auto;
+    background-color: #AEAEB2;
+
+    border: 2px solid #85858B;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .innerOval {
+      width: 792px;
+      height: 8px;
+      background-color: #85858B;
+      border-radius: 4px;
+    }
+  }
+
+  .chequeWrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 1px;
+    left: 1px;
+    width: 932px;
+    height: 888px;
+    margin: 0px 74px 298px 74px;
+    overflow: hidden;
+
+    .leftSide {
+      position: relative;
+      top: 8px;
+      z-index: 2;
+      height: 882px;
+      width: 86px;
+      clip-path: polygon(0 0, 97% 0, 30% 100%, 0% 100%);
+      background: #0000000C;
+      border-radius: 5px;
+
+      &::after {
+        content: '';
+        height: 878px;
+        width: 80px;
+        position: absolute;
+        z-index: -1;
+        background: #ffffff;
+        clip-path: polygon(3% 0, 100% 0, 29% 100%, 4% 100%);
+      }
+
+    }
+
+    .rightSide {
+      position: relative;
+      top: 8px;
+      z-index: 2;
+      height: 882px;
+      width: 86px;
+      clip-path: polygon(0 0, 97% 0%, 97% 100%, 62% 100%);
+      background: #0000000C;
+      border-radius: 5px;
+
+      &::after {
+        content: '';
+        height: 878px;
+        width: 80px;
+        position: absolute;
+        z-index: -1;
+        background: #ffffff;
+        clip-path: polygon(3% 0, 100% 0, 100% 100%, 71% 100%);
+      }
+    }
+
+    .innerCheque {
+      position: relative;
+      top: 6px;
+      z-index: 4;
+
+      .chequeInner {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        height: 806px;
+        width: 760px;
+        margin: auto;
+        background: rgb(200, 200, 200);
+        border: 1px solid #bbbbbb;
+        border-bottom: none;
+        background: linear-gradient(0deg, rgba(200, 200, 200, 1) 4%, rgba(255, 255, 255, 1) 40%, rgba(235, 235, 235, 1) 97%);
+        box-shadow: 0 7px 12px 4px rgba(34, 60, 80, 0.2);
+
+        .chequeText {
+          margin: 100px 0 436px 0;
+          width: 585px;
+          height: 352px;
+
+          .header {
+            margin-bottom: 24px;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 44px;
+            text-align: center;
+            color: #A0A0A0
+          }
+
+          .price {
+            margin-bottom: 44px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+            .integer {
+              font-size: 104px;
+              font-weight: 700;
+              line-height: 112px;
+              text-align: right;
+              color: #34343E;
+            }
+
+            .fractionalNumber {
+              font-size: 56px;
+              font-weight: 700;
+              line-height: 79px;
+              text-align: right;
+              color: #34343E;
+            }
+          }
+
+          .appeal {
+            font-size: 54px;
+            font-weight: 600;
+            line-height: 64px;
+            text-align: center;
+            color: #00923A;
+          }
+        }
+      }
+
+    }
+  }
+
+}
