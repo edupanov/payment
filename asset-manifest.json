@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3f50f9b9.css",
+    "main.js": "/static/js/main.924a22a1.js",
+    "static/js/787.88c46938.chunk.js": "/static/js/787.88c46938.chunk.js",
+    "static/media/Gilroy-Regular.ttf": "/static/media/Gilroy-Regular.5b89a8df3b17dccdb73f.ttf",
+    "static/media/Gilroy-Bold.ttf": "/static/media/Gilroy-Bold.ca49f7658c4eaac78b6d.ttf",
+    "static/media/Union.png": "/static/media/Union.2ff839dfe019a77c5cdc.png",
+    "index.html": "/index.html",
+    "main.3f50f9b9.css.map": "/static/css/main.3f50f9b9.css.map",
+    "main.924a22a1.js.map": "/static/js/main.924a22a1.js.map",
+    "787.88c46938.chunk.js.map": "/static/js/787.88c46938.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f50f9b9.css",
+    "static/js/main.924a22a1.js"
+  ]
+}
